@@ -1,0 +1,156 @@
+@import "colors";
+
+.home {
+  width: 100%;
+  height: 100vh;
+  background-color: $second;
+  >main {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      width: 100%;
+      height: 100%;
+      padding: 2rem;
+      justify-content: center;
+      
+      h3{
+          font: 400 3rem "Roboto";
+          color:$first;
+        }
+        
+    }
+    &::before{
+        content:"";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: no-repeat center/auto url(/Asset/1.png);
+        border-radius:200px 200px 200px 200px ;
+}
+}
+.home2{
+    width: 100%;
+    height: 100vh;
+    background-color: $second;
+    padding:500px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:-200px;
+    >img{
+        margin-left:3em;
+        width:30%;
+        animation: imgUp 0.7s linear infinite alternate;
+    }
+ 
+    >p{
+            font:200 1.5rem "Roboto";
+            letter-spacing: 2px;
+            word-spacing: 5px;
+            color:$first;
+            padding:5rem;
+
+        }
+}
+@keyframes imgUp{
+    to{
+transform:translateY(20px) ;
+
+    }}
+
+.home3{
+        width: 100%;
+        height: 100vh;
+        background-color: $second;
+        padding:2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+    h1{
+        text-decoration: underline;
+        text-transform: uppercase;
+        font:600 5rem "Roboto";
+        letter-spacing: 2px;
+        word-spacing: 3px;
+        color:$first;
+        padding:5rem;
+
+    }
+    p{
+        font:300 1.5rem "Roboto";
+        letter-spacing: 2px;
+        word-spacing: 3px;
+        color:$first;
+        padding:5rem;
+        border: 2px solid white;
+
+    }
+}
+.home4{
+    width: 100%;
+    height: 100vh;
+    background-color: $second;
+    display: flex;
+    justify-content: flex-end;
+   
+    >div {
+            background-color: $third;
+            border-radius: 200px 0 0 200px;
+            width:65%;
+            height:70vh;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin:140px 0 0 0 ;
+        h1{
+            color:$first;
+            text-transform:uppercase;
+            border-bottom: 2px solid ;
+            padding:0.5rem;
+        }
+
+        article{
+                display:flex;
+                margin:2rem 0;
+                flex-wrap: wrap;
+                justify-content: center;
+                >div{
+                    animation: imgUp 0.7s linear infinite alternate ;
+                    margin:1rem;
+                    height: 10rem;
+                    width: 10rem;
+                    background-color: $first;
+                    border-radius: 50%;
+                    display:flex ;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;  
+                    transition: all 0.5s;
+                    cursor: pointer;
+                    &:hover{
+                       filter:invert(1)
+                    }
+                    svg{
+                        font-size: 3rem;
+                    }
+                    p{
+                        font:300 1.5rem black;
+                        
+                    }
+                >.my-icon {
+                    color: red;
+                  }
+                >.my-icon2{
+                    background: linear-gradient(to right, #F58529, #ED4956, #B8336A);
+                    color:white
+                }
+                }
+               
+        }
+    }
+}
