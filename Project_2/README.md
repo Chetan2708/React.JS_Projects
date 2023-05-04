@@ -1,4 +1,4 @@
-# You can preview this project here...
+# You can preview this project here..
 [CLick me](https://coin-trader-hq.vercel.app/)
 
 # Getting Started with Create React App
