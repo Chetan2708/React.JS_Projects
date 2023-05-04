@@ -1,3 +1,6 @@
+# You can preview this project here...
+[CLick me](https://coin-trader-hq.vercel.app/)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
