@@ -1,5 +1,5 @@
 # You can preview this project here..
-[Live preview] the Crypto guide web-app(https://coin-trader-hq.vercel.app/)
+[Live preview](https://coin-trader-hq.vercel.app/) the Crypto guide web-app.
 
 # Getting Started with Create React App
 
