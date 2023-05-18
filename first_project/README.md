@@ -1,5 +1,5 @@
 # You can preview this website live here:-   
-[CLick](https://reactone-pearl.vercel.app/)
+[Click Here](https://reactone-pearl.vercel.app/) to view live preview.
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
