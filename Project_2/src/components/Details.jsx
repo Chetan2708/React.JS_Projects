@@ -25,7 +25,7 @@ import { useParams } from "react-router-dom";
 import Chart from "./Chart";
 
 const CoinDetails = () => {
-  const [coin, setCoin] = useState({}); // Set the initial state of 'coin' as an empty object
+  const [coin, setCoin] = useState( {} ); // Set the initial state of 'coin' as an empty object
   const [loading, setLoading] = useState(true); // Set the initial state of 'loading' as true
   const [Error, setError] = useState(false); // Set the initial state of 'Error' as false
   const param = useParams(); // Get the URL parameters using 'useParams' hook from react-router-dom
