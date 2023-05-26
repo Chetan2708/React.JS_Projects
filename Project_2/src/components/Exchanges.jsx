@@ -13,57 +13,63 @@ import {
   Center,
 } from "@chakra-ui/react";
 import Loader from "./Loader";
+
 const Exchanges = () => {
-  const [exchange, setExchange] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [Error, setError] = useState(false);
+  const [exchange, setExchange] = useState([]); // State to hold the exchange data
+  const [loading, setLoading] = useState(true); // State to manage loading state
+  const [Error, setError] = useState(false); // State to manage error state
 
   useEffect(() => {
     const fetchAll = async () => {
       try {
-        const { data } = await axios.get(`${server}/exchanges`);
+        const { data } = await axios.get(`${server}/exchanges`); // Fetch exchange data from the server
 
-        setExchange(data);
-        setLoading(false);  //api fetched , loading ,spinner stopped
+        setExchange(data); // Set the exchange data in the state
+        setLoading(false); // Data fetched, loading spinner can be stopped
       } catch (error) {
-        setError(true);    //error 
-        setLoading(false);    //error found in api , no need of spinner
-      }  
+        setError(true); // Set error state to true if there is an error
+        setLoading(false); // Error found in API, no need for the loading spinner
+      }
     };
-    fetchAll();
+
+    fetchAll(); // Call the fetchAll function when the component mounts
   }, []);
+
   if (Error)
-    return <ErrorComp message="Error while fetching the Exchanges API " />;
+    return <ErrorComp message="Error while fetching the Exchanges API " />; // If there is an error, display the error component
+
   return (
     <Container maxW={"container.xl"}>
-      
       {loading ? (
-        <Loader />
+        <Loader /> // Display the loading spinner if the data is still loading
       ) : (
         <>
-        <Center>
-        <Heading size={20} padding={10} > The exchange websites are shown here by Ranks : </Heading>
-        </Center>
-        <HStack wrap={"wrap"} justifyContent={"center"}>
-          {exchange.map((i) => (
-            <ExchangeCard
-              key={i.id}
-              name={i.name}
-              img={i.image}
-              rank={i.trust_score_rank}
-              url={i.url}
-            />
-          ))}
-        </HStack>
+          <Center>
+            <Heading size={20} padding={10}>
+              The exchange websites are shown here by Ranks:
+            </Heading>
+          </Center>
+          <HStack wrap={"wrap"} justifyContent={"center"}>
+            {exchange.map((i) => (
+              <ExchangeCard
+                key={i.id}
+                name={i.name}
+                img={i.image}
+                rank={i.trust_score_rank}
+                url={i.url}
+              />
+            ))}
+          </HStack>
         </>
       )}
     </Container>
   );
 };
+
 const ExchangeCard = ({ name, img, rank, url }) => {
   return (
-    // url of the exchange sites , so it should not be opened in react component , so using a tag 
-    <a href={url} target={"blank"}>  
+    // An anchor tag is used to open the exchange sites in a new tab
+    <a href={url} target={"blank"}>
       <VStack
         w={"52"}
         shadow={"lg"}
@@ -84,7 +90,9 @@ const ExchangeCard = ({ name, img, rank, url }) => {
           objectfit={"contain"}
           alt={"Exchange"}
         />
-        <Heading size={"md"} noOfLines={1}>{rank}  </Heading>
+        <Heading size={"md"} noOfLines={1}>
+          {rank}
+        </Heading>
         <Text noOfLines={1}>{name}</Text>
       </VStack>
     </a>
