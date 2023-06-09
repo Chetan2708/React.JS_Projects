@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 const Coincard = ({ id, name, img, symbol, price, currencySymbol = "₹" }) => {
   return (
+    // Link to the specific coin's page based on its ID
     <Link to={`/coin/${id}`}>
       <VStack
         w={"52"}
@@ -18,6 +19,7 @@ const Coincard = ({ id, name, img, symbol, price, currencySymbol = "₹" }) => {
           },
         }}
       >
+        {/* Display the coin's image */}
         <Image
           src={img}
           w={"10"}
@@ -25,11 +27,14 @@ const Coincard = ({ id, name, img, symbol, price, currencySymbol = "₹" }) => {
           objectfit={"contain"}
           alt={"Exchange"}
         />
+        {/* Display the coin's symbol */}
         <Heading size={"md"} noOfLines={1}>
           {symbol}
         </Heading>
+        {/* Display the coin's name */}
         <Text noOfLines={1}>{name}</Text>
-        <Text noOfLines={1}>{price ? `${currencySymbol}${price}` : "NA"} </Text>  {/* if some of the prices are not available , then show NA else show currency symbol with price */}
+        {/* Display the coin's price if available, otherwise show "NA" */}
+        <Text noOfLines={1}>{price ? `${currencySymbol}${price}` : "NA"}</Text>
       </VStack>
     </Link>
   );
