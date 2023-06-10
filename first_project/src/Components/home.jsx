@@ -48,7 +48,7 @@ const Home = () => {
               {/* Instagram icon */}
               <AiFillInstagram className="my-icon2" />
               <Link to="https://www.instagram.com/_chetan2708/">
-                <p>Instagram</p>
+                <p> Instagram </p>
               </Link>
             </div>
             <div style={{ animationDelay: "0.9s" }}>
