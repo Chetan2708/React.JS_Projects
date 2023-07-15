@@ -1,4 +1,5 @@
-# Getting Started with Create React App
+#Live preview
+[Watch here](https://cart-ruddy.vercel.app/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
