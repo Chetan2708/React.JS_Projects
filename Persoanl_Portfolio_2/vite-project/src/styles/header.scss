@@ -1,0 +1,130 @@
+.nav-menu {
+  position: fixed;
+  inset-block: 0;
+  left: -100%; //making it -100 so that navigation-menu should not appear on the screen
+  background-color: var(--container_color);
+  width: 100%;
+  padding: 60px 30px;
+  transition: all 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  z-index: 100;
+}
+.show-menu {
+  left: 0%; //Making it 0 to bring it on screen
+}
+.nav-link {
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
+  border-bottom: 1px solid var(--border_color);
+  padding-block: 14px;
+}
+
+.nav-icon,
+.nav-name {
+  color: var(--title_color);
+}
+.nav-name {
+  font-weight: 500;
+}
+.active .nav-icon,
+.active .nav-name {
+  color: var(
+    --c1
+  ); // Changing the color of the icon and name when the nav-link is active
+}
+.nav-toggle {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(178, 176, 176);
+  border-radius: 5px;
+  z-index: 100;
+  span {
+    display: block;
+    margin: auto;
+    width: 20px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: var(--title_color);
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+  div {
+    margin-top: 10px;
+  }
+}
+
+// To make the 3-line icon X shaped
+.animate-toggle span:first-child {
+  transform: rotate(45deg) translate(6px, 4px);
+}
+.animate-toggle span:nth-child(2) {
+  display: none;
+}
+.animate-toggle span:last-child {
+  transform: rotate(-45deg) translate(1px, 1px);
+}
+
+@media screen and (min-width: 1024px) {
+  .nav-menu {
+    all: unset;
+  }
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav {
+    position: fixed;
+    inset-block: 0;
+    right: 30px;
+    display: flex;
+
+    align-items: center;
+    .nav-item {
+      margin-block: 20px;
+    }
+    .nav-link {
+      padding: 0;
+      border-bottom: none;
+      background-color: var(--container_color);
+      width: 50px;
+      position: relative;
+      height: 50px;
+      border-radius: 50%;
+      left: 30px;
+      &:hover,
+      .active {
+        background-color: var(--c1);
+      }
+        &:hover .nav-icon {
+          color: white;
+        }
+      &:hover .nav-name {
+        color: white;
+        right: 27px;
+        opacity: 1;
+        visibility: visible;
+        border-radius: 30px 0 0 30px;
+      }
+    }
+    .nav-name {
+      position: absolute;
+      top: 0;
+      background-color: var(--c1);
+      border-radius: 30px;
+      line-height: 50px;
+      z-index: -1;
+      padding-inline: 30px 25px;
+      font-size: var(--small_font);
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+    }
+    .nav-icon {
+      font-size: 24px;
+      margin-inline: auto;
+    }
+  }
+}

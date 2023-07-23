@@ -1,0 +1,89 @@
+.contact-container {
+  grid-template-columns: 4fr 8fr;
+}
+
+.contact-title {
+  font-size: 21px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.contact-description {
+  font-size: var(--small_font);
+  line-height: 1.6;
+}
+.contact-description,
+.contact-info .info-item {
+  margin-bottom: 20px;
+}
+.info-item {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+  .info-icon {
+    color: var(--c1);
+    font-size: var(--h3_font);
+  }
+  .info-title {
+    font-size: var(--normal_font);
+  }
+  .info-desc {
+    font-size: var(--small_font);
+    font-family: var(--text1);
+
+  }
+}
+
+.contact-socials {
+  display: flex;
+  column-gap: 16px;
+}
+.contact-social-link {
+  background-color: var(--container_color);
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 55px;
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: var(--c1);
+    color: #fff;
+  }
+}
+.form-input-group {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+}
+
+.form-input-div {
+  margin-bottom: 30px; //Gap for Your message
+}
+textarea {
+  height: 180px;
+  resize: none;
+}
+.form-control {
+  border: 1px solid var(--container_color);
+  background-color: var(--container_color);
+  color: var(--title_color);
+  width: 100%;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-size: var(--small_font);
+  transition: all 0.3s ease;
+  &:focus {
+    border-color: var(--c1);
+  }
+}
+#git {
+  color: #000;
+}
+.mail{
+  color: var(--title_color);
+  &:hover{
+    border-bottom: 2px solid  var(--title_color);
+    
+  }
+}

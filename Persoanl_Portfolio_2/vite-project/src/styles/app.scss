@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Roboto+Slab:wght@200;300;400&display=swap");
+@import "check";
+@import "media";
+@import "header";
+@import "home";
+@import "about";
+@import "contact";
+@import "project";
+@import "theme";
+
+* {
+  margin: 0%;
+  padding: 0%;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--body_color);
+  color: var(--text_color);
+
+  input,
+  textarea {
+    font-family: var(--text1);
+    font-size: var(--normal_font);
+    font-weight: 500;
+  }
+}
+.container {
+  max-width: 1140px;
+  margin-inline: auto;
+  padding-inline: 15px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--title_color);
+  font-family: var(--text2);
+  font-weight: 700;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.grid {
+  display: grid;
+  gap: 30px;
+}
+.section {
+  padding-block: 70px;
+}
+.section-title {
+  font-size: var(--big_font);
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 50px;
+  span {
+    color: var(--c1);
+  }
+}
+.button {
+  margin-top: 2rem;
+  display: inline-block;
+  color: var(--title_color);
+  border: 1px solid var(--c1);
+  padding: 15px 70px 15px 55px;
+  border-radius: 35px;
+  font-family: var(--text2);
+  font-size: var(--small_font);
+  font-weight: 600;
+  position: relative;
+  overflow: hidden;
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0; //is used to make the pseudo-element--purplecolor fill the entire button
+    background-color: var(--c1);
+    transform: translateX(
+      100%
+    ); //to move the pseudo-element outside of the button to the right
+    z-index: -1; //to place the pseudo-element behind the button.
+    transition: all 0.3s ease-out;
+  }
+  &:hover {
+    color: #fff;
+    z-index: 1; //to move the button above the pseudo-element and ensure that the text remains visible on hover.
+    &::before {
+      transform: translateX(
+        0
+      ); // to move the pseudo-element back into the button, creating the sliding purple background effect
+    }
+  }
+}
+
+.button-icon {
+  background-color: var(--c1);
+  position: absolute;
+  inset-block: -2px;
+  right: 0;
+  width: 55px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: var(--large_font);
+  text-align: center;
+  line-height: 60px;
+}

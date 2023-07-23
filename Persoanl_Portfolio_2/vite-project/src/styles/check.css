@@ -1,0 +1,48 @@
+:root {
+  --c1: rgb(226, 149, 6);
+  --title_color: #666666;
+  --text_color: #808080;
+  --body_color: #ffffff;
+  --container_color: #ededed;
+  --border_color: #dedede;
+  --text_white: #fff;
+  --text1: "Open Sans", sans-serif;
+  --text2: "Poppins", sans-serif;
+  --text3: "Roboto Slab", sans-serif;
+  --big_font: 56px;
+  --h1_font: 50px;
+  --home_font: 40px;
+  --p_font: 30px;
+  --h2_font: 32px;
+  --h3_font: 24px;
+  --large_font: 18px;
+  --normal_font: 16px;
+  --small_font: 15px;
+  --smaller_font: 14px;
+  --tiny_font: 12px;
+}
+
+.dark-theme {
+  --title_color: #ffffff;
+  --text_color: #e0e0e0;
+  --body_color: #0b0b0b;
+  --container_color: #1b1b1b;
+  --border_color: #000000;
+  --paragraph: #000;
+}
+
+@media screen and (max-width: 1200px) {
+  :root {
+    --big_font: 36px;
+    --h1_font: 32px;
+    --home_font: 32px;
+    --p_font: 20px;
+    --h3_font: 20px;
+    --h2_font: 24px;
+    --large_font: 16px;
+    --normal_font: 15px;
+    --small_font: 14px;
+    --smaller_font: 13px;
+    --tiny_font: 11px;
+  }
+}

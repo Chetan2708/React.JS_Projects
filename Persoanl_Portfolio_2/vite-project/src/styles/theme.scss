@@ -1,0 +1,78 @@
+.style-switch {
+  position: fixed;
+  left: 0;
+  top: 10%;
+  background-color: #fff;
+  width: 220px;
+  padding: 15px;
+  box-shadow: 0 0 4px hsl(0, 0%, 80%);
+  z-index: 10;
+  transform: translateX(-100%);
+  transition: all 0.3s ease;
+  .style-title {
+    font-size: var(--small_font);
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+  }
+}
+
+.show-switch {
+  transform: translateX(0%);
+}
+
+.style-switch,
+.style-toggle,
+.theme-toggle {
+  border-radius: 0px 5px 5px 0px;
+  color: hsl(0, 0%, 40%);
+  .style-close {
+    color: hsl(0, 0%, 40%);
+  }
+}
+.style-items {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  row-gap: 10px;
+  column-gap: 5px;
+}
+
+.theme-img {
+  cursor: pointer;
+  width: 30px;
+}
+.style-toggle,
+.theme-toggle {
+  position: absolute; //overlapping both icons on each other
+  left: 96%;
+  background-color: #fff;
+  height: 50px;
+  width: 50px;
+  font-size: var(--large_font);
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 0 2px hsl(0, 0%, 80%);
+  transition: all 0.3s ease;
+}
+
+.style-toggle {
+  //seperating both icons
+  top: -50%;
+}
+.theme-toggle {
+  bottom: 70%;
+}
+.style-close {
+  cursor: pointer;
+  font-size: var(--h2_font);
+  position: absolute;
+  top: 2%;
+  right: 15px;
+}
+
+.show-switch .style-toggle,
+.show-switch .theme-toggle {
+  left: -100%;
+}
