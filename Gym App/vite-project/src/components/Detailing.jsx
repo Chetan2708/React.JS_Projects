@@ -28,7 +28,7 @@ const Detailing = ({ exerciseDetail }) => {
            {name}
          </Typography>
          <Typography sx={{ fontSize: { lg: '24px', xs: '18px' } }} color="#4F4C4C">
-         Regular exercise is important for maintaining a healthy body and mind. 
+         Regular exercise is important for maintaining a fit body and mind. 
          If {`you're`} looking for an effective exercise to target your {target} and improve your mood and energy levels, you might want to consider trying {name}.
         </Typography>
 
