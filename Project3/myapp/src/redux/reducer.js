@@ -1,5 +1,8 @@
 import { createReducer } from "@reduxjs/toolkit";
 
+
+//USing local storage because on every reload 
+//the data was fetching from the very start
 //If any items present in cart it gets that from local storage or makes it an empty array 
 const initialState = {
   cartitems: JSON.parse(localStorage.getItem("cartitems")) || [],
