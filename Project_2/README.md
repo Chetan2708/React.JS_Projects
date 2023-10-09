@@ -1,5 +1,5 @@
 # You can preview this project here
-[Live preview](https://coin-trader-hq.vercel.app/) the Crypto guide web-app.
+[Live preview](https://coin-trader-hq.vercel.app/) the Crypto guide web-app , that also has features of chart js and shows tracker for each coin that is present in the market.
 
 # Getting Started with Create React App
 
