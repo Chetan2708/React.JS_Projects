@@ -7,6 +7,7 @@
   --border_color: #dedede;
   --text_white: #fff;
   --text1: "Open Sans", sans-serif;
+  
   --text2: "Poppins", sans-serif;
   --text3: "Roboto Slab", sans-serif;
   --big_font: 56px;
@@ -31,16 +32,17 @@
   --paragraph: #000;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and ( max-width: 1200px ) {
   :root {
     --big_font: 36px;
     --h1_font: 32px;
     --home_font: 32px;
     --p_font: 20px;
     --h3_font: 20px;
+    
     --h2_font: 24px;
     --large_font: 16px;
-    --normal_font: 15px;
+    --normal_font: 16px;
     --small_font: 14px;
     --smaller_font: 13px;
     --tiny_font: 11px;
