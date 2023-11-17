@@ -58,6 +58,13 @@ const ProductSingle = styled.div`
   &:hover {
     transform: translateY(-10px);
   }
+  span {
+    display: block;
+    max-height: 60px; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
 `;
 
 const ProductImage = styled.img`
