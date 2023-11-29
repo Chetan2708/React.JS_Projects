@@ -74,6 +74,7 @@ export const first = createReducer(initialState, {
     localStorage.setItem("shipping", JSON.stringify(state.shipping));
     localStorage.setItem("tax", JSON.stringify(state.tax));
     localStorage.setItem("total", JSON.stringify(state.Total));
+
 },
 });
 

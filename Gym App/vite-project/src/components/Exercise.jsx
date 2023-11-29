@@ -21,7 +21,9 @@ const Exercise = ({setExercise ,bodyPart , exercise }) => {
   let fetchExercisesData = async()=>{
     let bodyPartarray= []
     if(bodyPart ==='all'){
+      
       bodyPartarray = await fetchData('https://exercisedb.p.rapidapi.com/exercises' ,Options)
+
     }
     else{
         bodyPartarray = await fetchData(`https://exercisedb.p.rapidapi.com/exercises/bodyPart/${bodyPart}`, Options);
