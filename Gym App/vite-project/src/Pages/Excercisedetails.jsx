@@ -14,7 +14,6 @@ const Excercisedetails = () => {
 
   const { id } = useParams();
   useEffect(() => {
-
     window.scrollTo({ top: 0, behavior: 'smooth' });
     const fetchExerciseData = async () => {
       const exercisedburl = "https://exercisedb.p.rapidapi.com";

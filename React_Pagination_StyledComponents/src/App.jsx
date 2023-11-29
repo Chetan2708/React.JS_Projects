@@ -58,9 +58,12 @@ const ProductSingle = styled.div`
   &:hover {
     transform: translateY(-10px);
   }
-  span {
+
+
+    span {
     display: block;
-    max-height: 60px; 
+    max-height: 60px; /* Adjust this value as needed */
+
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
