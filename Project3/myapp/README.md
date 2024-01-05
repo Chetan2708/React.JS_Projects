@@ -1,5 +1,5 @@
 #Live preview
-[Watch here](https://cart-ruddy.vercel.app/)
+[Watch here](https://cart-h8xqw3klm-chetangupta12344-gmailcom.vercel.app/home)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
