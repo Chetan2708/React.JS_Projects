@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from "react-router-dom";
 import {Box, Stack ,Typography,Button}from '@mui/material'
 const ExerciseCard = ({i}) => (
-    <Link className="exercise-card"  to={`/exercise/${i.id}`}   >
+    <Link className="exercise-card"  to={`/exercise/${i.id}`}>
         <img src={i.gifUrl} alt={i.name} loading='lazy' />
         <Stack direction="row">
       <Button sx={{ ml: '21px', color: '#fff', background: 'pink', fontSize: '14px', borderRadius: '20px', textTransform: 'capitalize' }}>
