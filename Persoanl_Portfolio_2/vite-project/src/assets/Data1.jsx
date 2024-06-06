@@ -195,9 +195,9 @@ export const projects = [
 
     {
       date: "11/10/2022",
-      title: "Gym-Guide",
+      title: "Fit-Craft-Hub",
       description: "The gym guide web-app that gives information on gym equipment, exercises, and muscles using API.",
-      url: " ",
+      url: "https://fit-craft-hub.onrender.com",
       imgSrc: "https://static.toiimg.com/thumb/msid-77851322,imgsize-533870,width-400,resizemode-4/77851322.jpg"
     },
     {
