@@ -1,7 +1,7 @@
 import Stats from "./Stats";
 import Info from "./Info";
 import { FaDownload } from "react-icons/fa";
-import resume from "../assets/Chetan_Gupta_resume.pdf";
+import resume from "../assets/ChetanGuptaResume.pdf";
 import Skills from "./Skills";
 import { timeline } from "../assets/Data1";
 import Timeline from "./Timeline";
