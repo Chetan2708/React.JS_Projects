@@ -1,7 +1,7 @@
 export const Options = {
   method: "GET",
   headers: {
-    "X-RapidAPI-Key": "6a1598a399msh2ea3cf3d4695b72p13d2b3jsn582b48041c21",
+    "X-RapidAPI-Key": "6a1598a399msh2ea3cfd495b72p13d2b3jsn582b48041c21",
     "X-RapidAPI-Host": "exercisedb.p.rapidapi.com",
   },
 };
